@@ -54,7 +54,7 @@ Steps in run_analysis.R
 	•	Remove the meanFrequency columns from the data.
 	•	Use the descriptive activity names from the file activity_labels.txt.
 	•	Use the gsub function to change the existing variable names into more meaningful.
-	•	Melt the data set and create a tidy data file which includes only the average of each variable for each activity and each subject using dcast function.
+	•	Melt the data set and create a tidy data file which includes only the average of each variable for each activity 		and each subject using dcast function.
 
 
 Data Transformation in  run_analysis.R
@@ -75,7 +75,7 @@ Here follows a description of tidy_data.txt what looks like.
 
 A total of 66 features were selected from the original data: only the estimated mean and standard deviations, using a grep.These features form the 66 other variables in the dataset, making a total of 68 columns. The feature names from the original data have been rewritten, using the following rules:
 
-	•	The prefix was rewritten into  to make it clear the feature corresponds to the time domain
-	•	The prefix  was rewritten into  to make it clear the feature corresponds to the frequency domain
+	•	The prefix was rewritten t into time to make it clear the feature corresponds to the time domain
+	•	The prefix  was rewritten f into freq to make it clear the feature corresponds to the frequency domain
 	•	dashes and parentheses have been removed
 
